@@ -451,7 +451,9 @@ import com.mars_sim.mapdata.common.FileLocator;
 		 colBuffer.getBuffer().get(cols);
 
 		 for(int i = 0; i < size; i++) {
-			 mapArray[i] = baseMapPixels[rows[i]][cols[i]];
+			 if(!(rows[i] == 0 && cols[i] == 0)) {
+				 mapArray[i] = baseMapPixels[rows[i]][cols[i]];
+			 }
 		 }
 
 		 rowBuffer.release();
