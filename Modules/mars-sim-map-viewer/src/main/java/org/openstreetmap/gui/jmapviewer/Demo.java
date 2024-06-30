@@ -26,6 +26,9 @@ import org.openstreetmap.gui.jmapviewer.interfaces.TileSource;
 import org.openstreetmap.gui.jmapviewer.tilesources.BingTileSource;
 import org.openstreetmap.gui.jmapviewer.tilesources.BingAerialTileSource;
 import org.openstreetmap.gui.jmapviewer.tilesources.OsmTileSource;
+import org.openstreetmap.gui.jmapviewer.tilesources.astro.OPMMarsShadedSurfaceTileSource;
+import org.openstreetmap.gui.jmapviewer.tilesources.astro.OPMMarsTileSource;
+import org.openstreetmap.gui.jmapviewer.tilesources.astro.OPMMarsVikingTileSource;
 
 /**
  * Demonstrates the usage of {@link JMapViewer}
@@ -87,13 +90,16 @@ public class Demo extends JFrame implements JMapViewerEventListener {
             }
         });
         JComboBox<TileSource> tileSourceSelector = new JComboBox<>(new TileSource[] {
-                new OsmTileSource.Mapnik(),
-                new OsmTileSource.CycleMap(),
-                new OsmTileSource.TransportMap(),
-                new OsmTileSource.LandscapeMap(),
-                new OsmTileSource.OutdoorsMap(),
-                new BingTileSource(),
-                new BingAerialTileSource()
+                new OPMMarsTileSource(),
+                new OPMMarsVikingTileSource(),
+                new OPMMarsShadedSurfaceTileSource()
+//                new OsmTileSource.Mapnik(),
+//                new OsmTileSource.CycleMap(),
+//                new OsmTileSource.TransportMap(),
+//                new OsmTileSource.LandscapeMap(),
+//                new OsmTileSource.OutdoorsMap(),
+//                new BingTileSource(),
+//                new BingAerialTileSource(),
         });
         tileSourceSelector.addItemListener(new ItemListener() {
             @Override

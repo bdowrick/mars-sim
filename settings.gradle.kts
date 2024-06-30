@@ -3,10 +3,10 @@
  */
 
 rootProject.name = "mars-sim"
-include(":mars-sim-console")
-include(":mars-sim-core")
-include(":mars-sim-tools")
-include(":mars-sim-headless")
-include(":mars-sim-ui")
-include(":mars-sim-dist")
+include(":Modules:mars-sim-console")
+include(":Modules:mars-sim-core")
+include(":Modules:mars-sim-tools")
+include(":Modules:mars-sim-headless")
+include(":Modules:mars-sim-ui")
+include(":Modules:mars-sim-dist")
 include(":Modules:mars-sim-map-viewer")

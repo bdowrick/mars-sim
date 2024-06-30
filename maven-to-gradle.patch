@@ -561,7 +561,7 @@ new file mode 100644
 +}
 +
 +dependencies {
-+    api(project(":mars-sim-core"))
++    api(project(":Modules:mars-sim-core"))
 +    api(libs.org.beryx.text.io)
 +    api(libs.org.apache.sshd.sshd.core)
 +    testImplementation(libs.org.hamcrest.hamcrest.core)
@@ -620,7 +620,7 @@ new file mode 100644
 +}
 +
 +dependencies {
-+    api(project(":mars-sim-console"))
++    api(project(":Modules:mars-sim-console"))
 +    api(libs.org.apache.commons.commons.lang3)
 +    api(libs.commons.cli.commons.cli)
 +    api(libs.org.slf4j.slf4j.api)
@@ -646,7 +646,7 @@ new file mode 100644
 +}
 +
 +dependencies {
-+    api(project(":mars-sim-core"))
++    api(project(":Modules:mars-sim-core"))
 +    api(libs.org.springframework.spring.core)
 +    api(libs.com.github.spullara.mustache.java.compiler)
 +    testImplementation(libs.org.jsoup.jsoup)
@@ -672,9 +672,9 @@ new file mode 100644
 +}
 +
 +dependencies {
-+    api(project(":mars-sim-core"))
-+    api(project(":mars-sim-tools"))
-+    api(project(":mars-sim-headless"))
++    api(project(":Modules:mars-sim-core"))
++    api(project(":Modules:mars-sim-tools"))
++    api(project(":Modules:mars-sim-headless"))
 +    api(libs.org.jfree.jfreechart)
 +    api(libs.org.bidib.jbidib.eu.hansolo.steelseries)
 +    api(libs.org.apache.xmlgraphics.batik.transcoder)
@@ -702,12 +702,12 @@ new file mode 100644
 + */
 +
 +rootProject.name = "mars-sim"
-+include(":mars-sim-console")
-+include(":mars-sim-core")
-+include(":mars-sim-tools")
-+include(":mars-sim-headless")
-+include(":mars-sim-ui")
-+include(":mars-sim-dist")
++include(":Modules:mars-sim-console")
++include(":Modules:mars-sim-core")
++include(":Modules:mars-sim-tools")
++include(":Modules:mars-sim-headless")
++include(":Modules:mars-sim-ui")
++include(":Modules:mars-sim-dist")
 Index: mars-sim-base/pom.xml
 ===================================================================
 diff --git a/mars-sim-base/pom.xml b/mars-sim-base/pom.xml

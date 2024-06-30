@@ -36,6 +36,7 @@ import org.openstreetmap.gui.jmapviewer.interfaces.TileLoader;
 import org.openstreetmap.gui.jmapviewer.interfaces.TileLoaderListener;
 import org.openstreetmap.gui.jmapviewer.interfaces.TileSource;
 import org.openstreetmap.gui.jmapviewer.tilesources.OsmTileSource;
+import org.openstreetmap.gui.jmapviewer.tilesources.astro.OPMMarsTileSource;
 
 /**
  * Provides a simple panel that displays pre-rendered map tiles loaded from the
@@ -137,7 +138,7 @@ public class JMapViewer extends JPanel implements TileLoaderListener {
      *
      */
     public JMapViewer(TileCache tileCache) {
-        tileSource = new OsmTileSource.Mapnik();
+        tileSource = new OPMMarsTileSource();
         tileController = new TileController(tileSource, tileCache, this);
         mapMarkerList = Collections.synchronizedList(new LinkedList<MapMarker>());
         mapPolygonList = Collections.synchronizedList(new LinkedList<MapPolygon>());
