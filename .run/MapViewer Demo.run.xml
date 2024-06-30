@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="MapViewer Demo" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="org.openstreetmap.gui.jmapviewer.Demo" />
+    <module name="mars-sim.Modules.mars-sim-map-viewer.main" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="org.openstreetmap.gui.jmapviewer.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
