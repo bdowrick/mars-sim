@@ -1,4 +1,4 @@
-/build
+**/build
 **/target/
 .classpath
 .project
@@ -7,3 +7,4 @@
 .prefs
 /mars-sim.iml
 .vscode
+.gradle
